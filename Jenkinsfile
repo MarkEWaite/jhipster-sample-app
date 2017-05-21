@@ -50,7 +50,7 @@ pipeline {
             unstash 'ws'
             sh 'yarn install'
             sh 'yarn global add gulp-cli'
-            // sh 'gulp test'
+            sh 'gulp test'
         }
     }
     stage('Build Container') {
