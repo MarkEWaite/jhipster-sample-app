@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        // Run Apache maven
-        sh 'mvn --version'
+        // Compile Java with Apache maven
         sh 'mvn compile'
       }
     }
