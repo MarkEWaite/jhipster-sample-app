@@ -5,6 +5,7 @@ pipeline {
       steps {
         // Run Apache maven
         sh 'mvn --version'
+        sh 'mvn compile'
       }
     }
   }
